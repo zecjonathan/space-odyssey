@@ -5,8 +5,17 @@ body {
 }
 
 .image-container {
-    position: relative; /* set container to a relative position */
-    width: 100%; /* set your desired width */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire container */
 }
   
 .button {
