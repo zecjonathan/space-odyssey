@@ -2,17 +2,19 @@ body {
     height: 100vh; /* Use viewport height for full height */
     margin: 0;
     padding: 0;
-    background-image: url('assets/temproom.avif'); /* Pfad zum Hintergrundbild */
-    background-size: cover; /* Das Bild soll den gesamten Bildschirm abdecken */
-    background-position: center; /* Das Bild soll zentriert sein */
-    height: 100vh; /* Die Höhe der Seite soll dem Bildschirm entsprechen */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+.container {
+    position: relative;
+}
+
+.parent {
+    position: absolute;
+    left: 200px;
 }
 
 .button {
-    position: absolute;
+    position: relative;
     background-color: rgba(255, 255, 255, 0.5);
     border: none;
     padding: 10px 20px;
@@ -24,11 +26,6 @@ body {
 #button-tuer {
     top: 50%;
     left: 50%;
-}
-
-#button-fenster {
-    top: 30%;
-    left: 70%;
 }
 
 .header {
