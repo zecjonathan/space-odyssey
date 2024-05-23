@@ -10,3 +10,7 @@ body {
     color: #333; /* Set text color */
     font-family: Arial, sans-serif; /* Choose a suitable font */
 }
+
+.link-container {
+    display: inline;
+}
