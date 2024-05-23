@@ -26,7 +26,7 @@ body {
     font-family: Arial, sans-serif; /* Choose a suitable font */
 }
 
-.pickbutton {
+.pickbutton {  /*css for link to next page*/
     display: inline-block;
     font-family: Roboto, sans-serif;
     font-weight: 600;
