@@ -1,6 +1,6 @@
 This is just a space odyssee. And a secret hacking tool to bring down LernSax Servers. :) 
 
-preview: https://htmlpreview.github.io/?https://raw.githubusercontent.com/zecjonathan/space-odyssey/main/code/index.html (braucht zeit, nachdem github geupdated wurde)
+preview: https://previewhtml.github.io/?url=https%3A%2F%2Fraw.githubusercontent.com%2Fzecjonathan%2Fspace-odyssey%2Fmain%2Fcode%2Findex.html (braucht zeit, nachdem github geupdated wurde)
 
 # Dynamic Header and Footer Loader
 
