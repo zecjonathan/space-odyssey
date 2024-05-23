@@ -4,6 +4,14 @@ body {
     padding-right: 200px; /* Add right padding to the body */
 }
 
+.header {
+    background-color: rgb(218, 218, 218);
+}
+
+.footer {
+    background-color: rgb(218, 218, 218);
+}
+
 .maintext {
     font-size: 18px; /* Adjust font size */
     line-height: 1.5; /* Adjust line height for better readability */
