@@ -6,8 +6,7 @@ body {
 
 .image-container {
     position: relative; /* set container to a relative position */
-    width: 500px; /* set your desired width */
-    height: 500px; /* set your desired height */
+    width: 100%; /* set your desired width */
 }
   
 .button {
