@@ -37,8 +37,6 @@ body {
     border: solid #ffffffad 2px;
     box-shadow: rgb(0, 0, 0) 5px 5px 14px -7px;
     border-radius: 11px;
-    display: flex;
-    flex-direction: row;
     align-items: center;
     cursor: pointer;
 }
