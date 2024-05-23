@@ -1,7 +1,5 @@
 body {
-    background-image: url('assets/painting-mountain-lake-with-mountain-background_188544-9126.jpg.avif'); /* Your background image */
-    background-size: cover;
-    background-position: center;
+    background-color: rgb(255, 255, 255);
     height: 100vh; /* Use viewport height for full height */
     margin: 0;
     padding: 0;
