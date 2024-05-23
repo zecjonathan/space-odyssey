@@ -1,5 +1,8 @@
 body {
     background-color: rgb(255, 255, 255);
+}
+
+.main {
     padding-left: 200px; /* Add left padding to the body */
     padding-right: 200px; /* Add right padding to the body */
 }
