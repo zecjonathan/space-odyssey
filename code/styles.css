@@ -31,10 +31,10 @@ body {
     font-family: Roboto, sans-serif;
     font-weight: 400;
     text-decoration: none;
-    color: #fff;
-    background: linear-gradient(200deg, #003e7d 0%, #7c0082 100%);
+    color: #000000;
+    background: linear-gradient(200deg, #99bee2 0%, #f3aaf7 100%);
     padding: 5px 10px;
-    border: solid #ffffff 2px;
+    border: solid #000000 2px;
     box-shadow: rgb(0, 0, 0) 5px 5px 14px -7px;
     border-radius: 11px;
     align-items: center;
@@ -42,5 +42,5 @@ body {
 }
 
 .pickbutton:hover {
-    background-color: #45a049; /* Darker green on hover */
+    
 }
