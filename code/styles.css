@@ -11,6 +11,26 @@ body {
     align-items: center;
 }
 
+.button {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#button-tuer {
+    top: 50%;
+    left: 50%;
+}
+
+#button-fenster {
+    top: 30%;
+    left: 70%;
+}
+
 .header {
     text-align: center;
 }
