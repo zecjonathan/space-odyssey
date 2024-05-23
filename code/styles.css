@@ -29,8 +29,7 @@ body {
 .pickbutton {  /*css for link to next page*/
     display: inline-block;
     font-family: Roboto, sans-serif;
-    font-weight: 600;
-    font-size: 14px;
+    font-weight: 400;
     text-decoration: none;
     color: #fff;
     background: linear-gradient(200deg, #003e7d 0%, #7c0082 100%);
