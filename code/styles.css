@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: 4D5061;
     height: 100vh; /* Use viewport height for full height */
     margin: 0;
     padding: 0;
@@ -22,7 +22,7 @@ body {
 .maintext {
     font-size: 25px; /* Adjust font size */
     line-height: 1.5; /* Adjust line height for better readability */
-    color: #333; /* Set text color */
+    color: E8C547; /* Set text color */
     font-family: Arial, sans-serif; /* Choose a suitable font */
 }
 
@@ -32,7 +32,7 @@ body {
     font-weight: 400;
     text-decoration: none;
     color: #000000;
-    background: linear-gradient(200deg, #99bee2 0%, #f3aaf7 100%);
+    background: linear-gradient(200deg, 5C80BC 0%, CDD1C4 100%);
     padding: 5px 10px;
     border: solid #000000 2px;
     box-shadow: rgb(0, 0, 0) 5px 5px 14px -7px;
