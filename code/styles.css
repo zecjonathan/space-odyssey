@@ -10,12 +10,6 @@ body {
     align-items: center;
 }
 
-.blur-background {
-    width: 100%;
-    height: 100%;
-    backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
-}
-
 .main {
     padding-left: 200px; /* Add left padding to the body */
     padding-right: 200px; /* Add right padding to the body */
