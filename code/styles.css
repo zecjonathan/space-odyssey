@@ -11,6 +11,19 @@ body {
     font-family: Arial, sans-serif; /* Choose a suitable font */
 }
 
-.link-container {
-    display: inline;
+.pickbutton {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text color */
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.pickbutton:hover {
+    background-color: #45a049; /* Darker green on hover */
 }
