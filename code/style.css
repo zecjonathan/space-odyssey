@@ -1,7 +1,7 @@
 body {
     background-color: rgb(255, 255, 255);
-    padding-left: 20px; /* Add left padding to the body */
-    padding-right: 20px; /* Add right padding to the body */
+    padding-left: 200px; /* Add left padding to the body */
+    padding-right: 200px; /* Add right padding to the body */
 }
 
 .maintext {
