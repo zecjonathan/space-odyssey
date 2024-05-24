@@ -37,8 +37,8 @@ body {
 }
 
 .button:hover {
-    background-color: #007BFF;
-    color: #ffffff;
+    background-color: #ebebeb;
+    color: #000000;
 }
 
 #fenster { /* moving button with fenster id to 50 23 🖕*/
