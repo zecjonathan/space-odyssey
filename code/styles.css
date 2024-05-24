@@ -1,0 +1,76 @@
+:root { /*https://coolors.co/89b6a5-4c3b4d-c9eddc-82968c-6a706e*/
+    --primary: #4C3B4D;
+    --secondary: #C9EDDC;
+    --accent: #ff6161;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; /* Ensure content is stacked vertically */
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: var(--white);
+    font-size: 16px;
+}
+
+.shadow {
+    -webkit-box-shadow: 10px 10px 21px -13px rgba(0,0,0,0.3);
+    -moz-box-shadow: 10px 10px 21px -13px rgba(0,0,0,0.3);
+    box-shadow: 10px 10px 21px -13px rgba(0,0,0,0.3);
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+    max-width: 1200px;
+    margin-block: 50px;
+}
+
+.image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.story {
+    margin-block: 20px;
+    line-height: 1.4;
+}
+
+.button-table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.button {
+    height: 100px;
+    border-radius: 10px;
+    transition: all 0.1s ease-in;
+    color: #090909;
+    padding: 0.7em 1.7em;
+    cursor: pointer;
+    font-size: 18px;
+    background: var(--white); 
+    border: 1px solid var(--black);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.button:hover {
+    font-size: 20px;
+    font-weight: 600;
+    transform: rotate(5deg);
+}
+  
+/*alle button id's mit hintergrund*/
+#raum1 {
+    background-image: url('assets/raum1.avif'); /* Replace 'your-image.jpg' with your image file */
+}
