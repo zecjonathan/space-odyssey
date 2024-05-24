@@ -26,11 +26,11 @@ body {
     cursor: pointer; /* change mouse cursor on hover */
     width: 50px;
     height: 50px;
-    outline: 4px dashed #ffffff; /* Outer circle (border) color */
+    outline: 4px dashed #ff0000; /* Use a more contrasting color for debugging */
     outline-offset: 15px;
     border-radius: 50%;
     background-color: #ffffff; /* Inner circle (button) color */
-    color: #000000; /*text color*/
+    color: #000000; /* text color */
     font-size: 16px;
     font-weight: bold;
     text-align: center;
