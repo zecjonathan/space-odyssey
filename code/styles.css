@@ -5,35 +5,22 @@ body {
 }
 
 .image-container {
-    object-fit: cover;
+    position: relative;
+    display: inline-block;
 }
 
 .image-container img {
-    width: 100%;
+    display: block;
 }
 
-.button {
-    position: absolute; /* set button to an absolute position */
-    transform: translate(-50%, -50%); /* center the button */
-    z-index: 2; /* set a higher z-index than the image */
-
-    cursor: pointer; /* change mouse cursor on hover */
-    width: 50px;
-    height: 50px;
-    outline: 4px dashed #ff0000; /* Use a more contrasting color for debugging */
-    outline-offset: 15px;
-    border-radius: 50%;
+.centered-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
     border: none;
-    background-color: #ffffff; /* Inner circle (button) color */
-    color: #000000; /* text color */
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    -webkit-box-shadow: 0px 0px 33px 2px rgba(0,0,0,0.31); 
-    box-shadow: 0px 0px 33px 2px rgba(0,0,0,0.31);
-    transition: outline-offset 0.1s;
-}
-
-.button:hover {
-    outline-offset: 5px;
+    cursor: pointer;
 }
