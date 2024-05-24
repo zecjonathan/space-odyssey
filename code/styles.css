@@ -44,7 +44,3 @@ body {
     height: 40px;
 }
 
-#fenster { /* moving button with fenster id to 50 23 🖕*/
-    top: 50%; /* adjust the top position of the button */
-    left: 23%; /* adjust the left position of the button */
-}
