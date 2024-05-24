@@ -29,7 +29,7 @@ body {
     outline: 4px dashed #ff0000; /* Use a more contrasting color for debugging */
     outline-offset: 15px;
     border-radius: 50%;
-    border: none
+    border: none;
     background-color: #ffffff; /* Inner circle (button) color */
     color: #000000; /* text color */
     font-size: 16px;
