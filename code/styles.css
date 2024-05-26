@@ -35,7 +35,7 @@ footer {
 .container {
     width: 100%;
     text-align: center;
-    max-width: 1200px;
+    max-width: min(1200px, calc(100vw - 20px));
 }
 
 .image {
