@@ -16,6 +16,15 @@ body {
     font-size: 16px;
 }
 
+header {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    margin-block: 50px;
+}
+
 .shadow {
     -webkit-box-shadow: 10px 10px 21px -13px rgba(0,0,0,0.3);
     -moz-box-shadow: 10px 10px 21px -13px rgba(0,0,0,0.3);
@@ -26,7 +35,7 @@ body {
     width: 100%;
     text-align: center;
     max-width: min(1200px, calc(100vw - 40px));
-    margin-block: 50px;
+    margin-block: 20px;
 }
 
 .image {
@@ -69,7 +78,7 @@ body {
     transform: rotate(360deg);
 }
   
-/*alle button id's mit hintergrund*/
+/*alle button id's mit hintergrund und links*/
 #raum1 {
     background-image: url('assets/raum1.avif'); /* Replace 'your-image.jpg' with your image file */
 }
