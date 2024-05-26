@@ -12,17 +12,9 @@ body {
     flex-direction: column; /* Ensure content is stacked vertically */
     align-items: center;
     height: 100vh;
+    margin: 0;
     background-color: var(--white);
     font-size: 16px;
-}
-
-header {
-    text-align: center;
-}
-
-footer {
-    text-align: center;
-    margin-block: 50px;
 }
 
 .shadow {
@@ -34,8 +26,8 @@ footer {
 .container {
     width: 100%;
     text-align: center;
-    max-width: min(1200px, calc(100vw - 40px));
-    margin-block: 20px;
+    max-width: 1200px;
+    margin-block: 50px;
 }
 
 .image {
@@ -75,10 +67,10 @@ footer {
 .button:hover {
     font-size: 20px;
     font-weight: 600;
-    transform: rotate(360deg);
+    transform: rotate(8deg);
 }
   
-/*alle button id's mit hintergrund und links*/
+/*alle button id's mit hintergrund*/
 #raum1 {
     background-image: url('assets/raum1.avif'); /* Replace 'your-image.jpg' with your image file */
 }
