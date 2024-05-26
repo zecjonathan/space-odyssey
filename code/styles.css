@@ -68,8 +68,25 @@ body {
     font-size: 20px;
     font-weight: 600;
     transform: rotate(8deg);
+    transition-duration: 0.2s;
 }
   
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.goback {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 5px;
+    border-top-right-radius: 15px;
+    font-size: 25px;
+    background: var(--white); 
+    border: 1px solid var(--black);
+}
+
 /*alle button id's mit hintergrund*/
 #raum1 {
     background-image: url('assets/raum1.avif'); /* Replace 'your-image.jpg' with your image file */
