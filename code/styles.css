@@ -75,7 +75,7 @@ footer {
 .button:hover {
     font-size: 20px;
     font-weight: 600;
-    transform: rotate(360deg);
+    transform: rotate(8deg);
     transition-duration: 0.2s;
 }
   
