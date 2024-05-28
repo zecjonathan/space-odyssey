@@ -97,27 +97,11 @@ footer {
 }
 
 /*alle button id's mit hintergrund*/
-#raum1 {
+#palast {
     background-image: url('assets/raum1.avif'); /* Replace 'your-image.jpg' with your image file */
 }
 
-#raum2 {
+#schenke {
     background-image: url('assets/raum2.jpeg'); /* Replace 'your-image.jpg' with your image file */
-}
-
-#raum3 {
-    background-image: url('assets/raum3.jpeg'); /* Replace 'your-image.jpg' with your image file */
-}
-
-#raum4 {
-    background-image: url('assets/raum4.jpeg'); /* Replace 'your-image.jpg' with your image file */
-}
-
-#raum5 {
-    background-image: url('assets/raum5.jpg'); /* Replace 'your-image.jpg' with your image file */
-}
-
-#raum6 {
-    background-image: url('assets/raum6.jpg'); /* Replace 'your-image.jpg' with your image file */
 }
 
