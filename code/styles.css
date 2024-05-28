@@ -60,7 +60,7 @@ footer {
     height: 100px;
     border-radius: 10px;
     transition: all 0.1s ease-in;
-    color: #090909;
+    color: var(--black);
     padding: 0.7em 1.7em;
     cursor: pointer;
     font-size: 18px;
@@ -94,9 +94,31 @@ footer {
     font-size: 25px;
     background: var(--white); 
     border: 1px solid var(--black);
+    color: var(--black);
 }
 
 /*alle button id's mit hintergrund*/
 #raum1 {
     background-image: url('assets/raum1.avif'); /* Replace 'your-image.jpg' with your image file */
 }
+
+#raum2 {
+    background-image: url('assets/raum2.jpeg'); /* Replace 'your-image.jpg' with your image file */
+}
+
+#raum3 {
+    background-image: url('assets/raum3.jpeg'); /* Replace 'your-image.jpg' with your image file */
+}
+
+#raum4 {
+    background-image: url('assets/raum4.jpeg'); /* Replace 'your-image.jpg' with your image file */
+}
+
+#raum5 {
+    background-image: url('assets/raum5.jpg'); /* Replace 'your-image.jpg' with your image file */
+}
+
+#raum6 {
+    background-image: url('assets/raum6.jpg'); /* Replace 'your-image.jpg' with your image file */
+}
+
