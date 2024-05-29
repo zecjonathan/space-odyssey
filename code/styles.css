@@ -34,14 +34,14 @@ footer {
 
 .container {
     text-align: center;
-    max-width: min(1200px, calc(100vw - 20px));
+    width: min(1200px, calc(100vw - 20px));
 }
 
 .image {
     width: 100%;
     object-fit: cover;
+    max-height: 400px;
     border-radius: 20px;
-    max-height: 600px;
 }
 
 .story {
