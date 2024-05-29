@@ -97,6 +97,14 @@ footer {
     color: var(--black);
 }
 
+.totbg {
+    background-image: url(assets/tot.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
 /*alle button id's mit hintergrund*/
 #palast {
     background-image: url('assets/palast.avif'); /* Replace 'your-image.jpg' with your image file */
