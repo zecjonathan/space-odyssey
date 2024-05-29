@@ -60,7 +60,7 @@ footer {
     height: 100px;
     border-radius: 10px;
     transition: all 0.1s ease-in;
-    color: var(--black);
+    color: var(--white);
     padding: 0.7em 1.7em;
     cursor: pointer;
     font-size: 18px;
