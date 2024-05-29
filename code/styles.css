@@ -65,6 +65,7 @@ footer {
     font-size: 18px;
     background: var(--white); 
     border: 1px solid var(--black);
+    text-decoration: none;
 
     background-size: cover;
     background-position: center;
@@ -125,8 +126,8 @@ footer {
     background-image: url('assets/wirt.avif'); /* Replace 'your-image.jpg' with your image file */
 }
 
-#tot {
-    background-image: url('assets/totbutton.webp'); /* Replace 'your-image.jpg' with your image file */
+#wache {
+    background-image: url('assets/wache.webp'); /* Replace 'your-image.jpg' with your image file */
 }
 
 #ruine {
