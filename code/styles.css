@@ -62,7 +62,7 @@ footer {
     color: var(--white);
     padding: 0.7em 1.7em;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 20px;
     background: var(--white); 
     border: 1px solid var(--black);
     text-decoration: none;
@@ -75,7 +75,7 @@ footer {
 .button:hover {
     font-size: 20px;
     font-weight: 600;
-    transform: rotate(3deg);
+    transform: rotate(2deg);
     transition-duration: 0.2s;
 }
   
