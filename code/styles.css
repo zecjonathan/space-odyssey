@@ -33,7 +33,6 @@ footer {
 }
 
 .container {
-    width: 100%;
     text-align: center;
     max-width: min(1200px, calc(100vw - 20px));
 }
