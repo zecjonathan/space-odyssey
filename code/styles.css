@@ -124,7 +124,7 @@ footer {
 }
 
 #aeltester {
-    background-image: url('assets/aeltesten.jpeg'); /* Replace 'your-image.jpg' with your image file */
+    background-image: url('assets/aeltester.jpeg'); /* Replace 'your-image.jpg' with your image file */
 }
 
 #wirt {
@@ -137,4 +137,13 @@ footer {
 
 #ruine {
     background-image: url('assets/ruine.jpg'); /* Replace 'your-image.jpg' with your image file */
+}
+#bier {
+    backround-image: url('assets/bier.jpeg'); /* Replace 'your-image.jpg' with your image file */
+}
+#artefakt {
+    backround-image: url('assets/artefakt.jpeg'); /* Replace 'your-image.jpg' with your image file */
+}
+#wache {
+    backround-image: url('assets/wache.jpeg'); /* Replace 'your-image.jpg' with your image file */
 }
