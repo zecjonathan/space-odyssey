@@ -112,7 +112,7 @@ footer {
 
 /*alle button id's mit hintergrund*/
 #palast {
-    background-image: url('assets/palast.avif'); /* Replace 'your-image.jpg' with your image file */
+    background-image: url('assets/palast.png'); /* Replace 'your-image.jpg' with your image file */
 }
 
 #schenke {
@@ -120,7 +120,7 @@ footer {
 }
 
 #lumaria {
-    background-image: url('assets/lumaria.avif'); /* Replace 'your-image.jpg' with your image file */
+    background-image: url('assets/lumaria.png'); /* Replace 'your-image.jpg' with your image file */
 }
 
 #aeltester {
@@ -128,7 +128,7 @@ footer {
 }
 
 #wirt {
-    background-image: url('assets/wirt.avif'); /* Replace 'your-image.jpg' with your image file */
+    background-image: url('assets/wirt.png'); /* Replace 'your-image.jpg' with your image file */
 }
 
 #wache {
