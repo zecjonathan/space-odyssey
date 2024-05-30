@@ -138,15 +138,19 @@ footer {
 #ruine {
     background-image: url('assets/ruine.jpg'); /* Replace 'your-image.jpg' with your image file */
 }
+
 #bier {
     background-image: url('assets/bier.jpg'); /* Replace 'your-image.jpg' with your image file */
 }
+
 #artefakt {
     background-image: url('assets/artefakt.jpg'); /* Replace 'your-image.jpg' with your image file */
 }
+
 #wache {
     background-image: url('assets/wache.jpg'); /* Replace 'your-image.jpg' with your image file */
 }
+
 #seite {
     background-image: url('assets/seite.png'); /* Replace 'your-image.jpg' with your image file */
 }
