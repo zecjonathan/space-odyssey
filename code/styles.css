@@ -97,14 +97,6 @@ footer {
     color: var(--black);
 }
 
-.totbg {
-    background-image: url(assets/totbg.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    object-fit: cover;
-}
-
 .hidden-link {
     text-decoration: none;
     color: var(--black);
