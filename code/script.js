@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function() { // fetching the heade
         .then(data => {
             document.getElementById('header-container').innerHTML = data;
         })
-        .catch(error => console.error('Error loading header:', error));
 });
 
 document.addEventListener("DOMContentLoaded", function() { // fetching the footer.html into any index.html file with footer-container id
@@ -13,6 +12,5 @@ document.addEventListener("DOMContentLoaded", function() { // fetching the foote
         .then(data => {
             document.getElementById('footer-container').innerHTML = data;
         })
-        .catch(error => console.error('Error loading header:', error));
 });
 
