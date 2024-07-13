@@ -4,7 +4,8 @@
     --secondary: #C9EDDC;
     --accent: #ff6161;
     --bg: #f0f0f0;
-    --text-color: #1a1a1a; /* Changed variable name from --text to --text-color */
+    --text: #1a1a1a; /* Changed variable name from --text to --text-color */
+    transition: background-color 0.8s, color 0.8s;
 }
 
 [color-mode="dark"] {
@@ -13,10 +14,8 @@
     --secondary: #C9EDDC;
     --accent: #ff6161;
     --bg: #1a1a1a;
-    --text-color: #f0f0f0;
+    --text: #f0f0f0;
 }
-
-    /* transition: background-color 0.5s ease, color 0.5s ease; /* Transition for both background and text color */
 
 body {
     font-family: Arial, sans-serif;
@@ -25,9 +24,10 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    color: var(--text-color);
+    color: var(--text);
     background-color: var(--bg);
     font-size: 16px;
+    transition: background-color 0.8s, color 0.8s;
 }
 
 header {
@@ -37,6 +37,28 @@ header {
 footer {
     text-align: center;
     margin-block: 30px;
+}
+
+.colorModeButton {
+    position: absolute;
+    border: 1px solid var(--text);
+    background-color: var(--bg);
+    color: var(--text);
+    top: 20px;
+    right: 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 10px;
+    fill: var(--text);
+    transition: background-color 0.8s, color 0.8s;
+}
+
+.colorModeButton svg line { /* some random css code for the dark mode icon svg*/
+    stroke: var(--text);
+    stroke-width:5;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-miterlimit:10;
 }
 
 .shadow {
@@ -76,7 +98,7 @@ footer {
     padding: 0.7em 1.7em;
     cursor: pointer;
     font-size: 20px;
-    border: 1px solid var(--primary);
+    border: none;
     text-decoration: none;
     background-size: cover;
     background-position: center;

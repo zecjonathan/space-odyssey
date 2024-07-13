@@ -14,6 +14,17 @@ document.addEventListener("DOMContentLoaded", function() { // starts when page l
         })
 });
 
+document.addEventListener("DOMContentLoaded", function() { // calls function on page load
+    let cookieColor = getCookie("color-mode"); // sets cookieColor var to getCookie function return for the cookie "color-mode"
+    const html = document.querySelector('html'); // selects the <html> element and assigns it to the constant variable html
+    if (cookieColor === "dark") { // if cookieColor (so from cookie browser data) is "dark", sets the 'color-mode' attribute of the <html> element to 'dark
+        html.setAttribute('color-mode', 'dark');
+    } 
+    if (cookieColor === "light") { // if cookieColor is "light", sets the 'color-mode' attribute of the <html> element to 'light'
+        html.setAttribute('color-mode', 'light');
+    } 
+});
+
 function getCookie(cname) { // sets function to get cookie 
     let name = cname + "="; // sets var name to function input and "="
     let decodedCookie = decodeURIComponent(document.cookie); // gets all browser saved cookies
@@ -29,17 +40,6 @@ function getCookie(cname) { // sets function to get cookie
     }
     return ""; // if no cookie found empty data
 }
-
-document.addEventListener("DOMContentLoaded", function() { // calls function on page load
-    let cookieColor = getCookie("color-mode"); // sets cookieColor var to getCookie function return for the cookie "color-mode"
-    const html = document.querySelector('html'); // selects the <html> element and assigns it to the constant variable html
-    if (cookieColor === "dark") { // if cookieColor (so from cookie browser data) is "dark", sets the 'color-mode' attribute of the <html> element to 'dark
-        html.setAttribute('color-mode', 'dark');
-    } 
-    if (cookieColor === "light") { // if cookieColor is "light", sets the 'color-mode' attribute of the <html> element to 'light'
-        html.setAttribute('color-mode', 'light');
-    } 
-});
 
 function toggleColorMode() { // states function (get called with button in header and toogles from light to dark)
     const html = document.querySelector('html'); // selects the <html> element and assigns it to the constant variable html
