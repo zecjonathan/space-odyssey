@@ -50,37 +50,56 @@ function toggleColorMode() { // states function (get called with button in heade
     }
 }
 
-
-
-
-
-// Get reference to the button and the paragraph element
-const speakButton = document.getElementById('speakButton');
-const storyParagraph = document.querySelector('.story');
-
-// Function to speak text using Text-to-Speech API
+// Function to speak text using Text-to-Speech Elevenlabs API
 function speakText(text) {
-    // Replace with your preferred Text-to-Speech API endpoint
-    const apiUrl = 'https://api.texttospeech.com/speak';
-
-    // Example using fetch to send text to TTS API (replace with actual API usage)
-    fetch(apiUrl, {
+    const options = {
         method: 'POST',
-        body: JSON.stringify({ text: text }),
         headers: {
-            'Content-Type': 'application/json'
+          'xi-api-key': '4ae1090a96f455afee3d15a18f3249ae',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            text: text,
+            model_id: "eleven_multilingual_v2",
+            voice_settings: {
+                stability: 0.5,
+                similarity_boost: 0.75
+            }})
+      };
+      
+      fetch('https://api.elevenlabs.io/v1/text-to-speech/21m00Tcm4TlvDq8ikWAM?enable_logging=true', options)
+        .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
         }
-    }).then(response => {
-        // Handle response from API (if needed)
-        console.log('Text sent to API for speech synthesis');
-    }).catch(error => {
-        console.error('Error sending text to API:', error);
-    });
+        return response.blob(); // Get the response as a blob
+    })
+    .then(blob => {
+        // Create a URL for the blob
+        const url = window.URL.createObjectURL(blob);
+
+        // Create an Audio element
+        const audio = new Audio(url);
+        audio.controls = true; // Show controls like play, pause
+        audio.autoplay = true; // Autoplay the audio
+        audio.style.display = 'none'; // Hide the audio element
+
+        // Append the Audio element to the document body
+        document.body.appendChild(audio);
+
+        // Clean up
+        audio.onended = () => {
+            document.body.removeChild(audio); // Remove the audio element once playback ends
+            window.URL.revokeObjectURL(url); // Revoke the blob URL
+        };
+    })
+    .catch(err => console.error('Error fetching or downloading file:', err));
 }
 
-// Event listener for button click
-speakButton.addEventListener('click', () => {
-    const textToSpeak = storyParagraph.textContent;
-    speakText(textToSpeak);
-    alert(textToSpeak)
+// getting click and text string data from button and story
+const speakButton = document.getElementById('speakButton'); // gets button find data
+const storyParagraph = document.querySelector('.story'); // gets story find data
+speakButton.addEventListener('click', () => { // runs when button is pressed
+    const textToSpeak = storyParagraph.textContent; // gets string from story
+    speakText(textToSpeak); // calls speak function for text
 });
