@@ -143,6 +143,14 @@ footer {
     background-image: url('assets/wache.jpg'); /* Replace 'your-image.jpg' with your image file */
 }
 
+#fremder-frage {
+    background-image: url('assets/fremder-frage.png'); /* Replace 'your-image.jpg' with your image file */
+}
+
+#kampf {
+    background-image: url('assets/kampf.png'); /* Replace 'your-image.jpg' with your image file */
+}
+
 #seite {
     background-image: url('assets/seite.png'); /* Replace 'your-image.jpg' with your image file */
 }
