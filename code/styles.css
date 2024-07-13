@@ -35,7 +35,7 @@ header {
 
 footer {
     text-align: center;
-    margin-block: 30px;
+    margin-block: 30px; 
 }
 
 .colorModeButton {
@@ -108,8 +108,8 @@ footer {
 .button:hover {
     font-size: 24px;
     font-weight: 600;
-    transform: rotate(2deg);
-    transition-duration: 0.2s;
+    transition-duration: 0.1s;
+    transform: scale(1.2) rotate(2deg);
 }
   
 .image-container {

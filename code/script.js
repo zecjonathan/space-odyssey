@@ -49,3 +49,38 @@ function toggleColorMode() { // states function (get called with button in heade
         document.cookie = "color-mode=light"; // push to browser cookie
     }
 }
+
+
+
+
+
+// Get reference to the button and the paragraph element
+const speakButton = document.getElementById('speakButton');
+const storyParagraph = document.querySelector('.story');
+
+// Function to speak text using Text-to-Speech API
+function speakText(text) {
+    // Replace with your preferred Text-to-Speech API endpoint
+    const apiUrl = 'https://api.texttospeech.com/speak';
+
+    // Example using fetch to send text to TTS API (replace with actual API usage)
+    fetch(apiUrl, {
+        method: 'POST',
+        body: JSON.stringify({ text: text }),
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    }).then(response => {
+        // Handle response from API (if needed)
+        console.log('Text sent to API for speech synthesis');
+    }).catch(error => {
+        console.error('Error sending text to API:', error);
+    });
+}
+
+// Event listener for button click
+speakButton.addEventListener('click', () => {
+    const textToSpeak = storyParagraph.textContent;
+    speakText(textToSpeak);
+    alert(textToSpeak)
+});
