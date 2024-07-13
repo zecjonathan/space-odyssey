@@ -50,52 +50,62 @@ function toggleColorMode() { // states function (get called with button in heade
     }
 }
 
-// Function to speak text using Text-to-Speech Elevenlabs API
-function speakText(text) {
-    const options = { // creates opions string for api
-        method: 'POST',
-        headers: {
-          'xi-api-key': '4ae1090a96f455afee3d15a18f3249ae',
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-            text: text,
-            model_id: "eleven_multilingual_v2",
-            voice_settings: {
-                stability: 0.5,
-                similarity_boost: 0.75
-            }})
-      };
-      
-      fetch('https://api.elevenlabs.io/v1/text-to-speech/21m00Tcm4TlvDq8ikWAM?enable_logging=true', options) // sends api request
-        .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        return response.blob(); // Get the response as a blob
-    })
-    .then(blob => {
-        const url = window.URL.createObjectURL(blob); // Create a URL for the blob
 
-        const audio = new Audio(url); // Create an Audio element
-        audio.controls = true; // Show controls like play, pause
-        audio.autoplay = true; // Autoplay the audio
-        audio.style.display = 'none'; // Hide the audio element
 
-        document.body.appendChild(audio); // Append the Audio element to the document body
 
-        audio.onended = () => { /// Clean up
-            document.body.removeChild(audio); // Remove the audio element once playback ends
-            window.URL.revokeObjectURL(url); // Revoke the blob URL
-        };
-    })
-    .catch(err => console.error('Error fetching or downloading file:', err));
-}
 
-// getting click and text string data from button and story
-const speakButton = document.getElementById('speakButton'); // gets button find data
-const storyParagraph = document.querySelector('.story'); // gets story find data
-speakButton.addEventListener('click', () => { // runs when button is pressed
-    const textToSpeak = storyParagraph.textContent; // gets string from story
-    speakText(textToSpeak); // calls speak function for text
-});
+
+
+// TEXT TO SPEECH CODE (COSTS ELEVENLABS CREDITS)
+// 
+// 
+// <button id="speakButton">Speak</button> //put under story to start tts
+// 
+// // Function to speak text using Text-to-Speech Elevenlabs API
+// function speakText(text) {
+//     const options = { // creates opions string for api
+//         method: 'POST',
+//         headers: {
+//           'xi-api-key': '4ae1090a96f455afee3d15a18f3249ae',
+//           'Content-Type': 'application/json'
+//         },
+//         body: JSON.stringify({
+//             text: text,
+//             model_id: "eleven_multilingual_v2",
+//             voice_settings: {
+//                 stability: 0.5,
+//                similarity_boost: 0.75
+//             }})
+//       };
+//       
+//       fetch('https://api.elevenlabs.io/v1/text-to-speech/21m00Tcm4TlvDq8ikWAM?enable_logging=true', options) // sends api request
+//         .then(response => {
+//         if (!response.ok) {
+//             throw new Error('Network response was not ok');
+//         }
+//         return response.blob(); // Get the response as a blob
+//     })
+//     .then(blob => {
+//         const url = window.URL.createObjectURL(blob); // Create a URL for the blob
+// 
+//         const audio = new Audio(url); // Create an Audio element
+//         audio.controls = true; // Show controls like play, pause
+//         audio.autoplay = true; // Autoplay the audio
+//         audio.style.display = 'none'; // Hide the audio element
+// 
+//         document.body.appendChild(audio); // Append the Audio element to the document body
+// 
+//         audio.onended = () => { /// Clean up
+//             document.body.removeChild(audio); // Remove the audio element once playback ends
+//             window.URL.revokeObjectURL(url); // Revoke the blob URL
+//         };
+//     })
+//     .catch(err => console.error('Error fetching or downloading file:', err));
+// 
+// // getting click and text string data from button and story
+// const speakButton = document.getElementById('speakButton'); // gets button find data
+// const storyParagraph = document.querySelector('.story'); // gets story find data
+// speakButton.addEventListener('click', () => { // runs when button is pressed
+//     const textToSpeak = storyParagraph.textContent; // gets string from story
+//     speakText(textToSpeak); // calls speak function for text
+// });
