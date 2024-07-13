@@ -52,7 +52,7 @@ function toggleColorMode() { // states function (get called with button in heade
 
 // Function to speak text using Text-to-Speech Elevenlabs API
 function speakText(text) {
-    const options = {
+    const options = { // creates opions string for api
         method: 'POST',
         headers: {
           'xi-api-key': '4ae1090a96f455afee3d15a18f3249ae',
@@ -67,7 +67,7 @@ function speakText(text) {
             }})
       };
       
-      fetch('https://api.elevenlabs.io/v1/text-to-speech/21m00Tcm4TlvDq8ikWAM?enable_logging=true', options)
+      fetch('https://api.elevenlabs.io/v1/text-to-speech/21m00Tcm4TlvDq8ikWAM?enable_logging=true', options) // sends api request
         .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok');
@@ -75,20 +75,16 @@ function speakText(text) {
         return response.blob(); // Get the response as a blob
     })
     .then(blob => {
-        // Create a URL for the blob
-        const url = window.URL.createObjectURL(blob);
+        const url = window.URL.createObjectURL(blob); // Create a URL for the blob
 
-        // Create an Audio element
-        const audio = new Audio(url);
+        const audio = new Audio(url); // Create an Audio element
         audio.controls = true; // Show controls like play, pause
         audio.autoplay = true; // Autoplay the audio
         audio.style.display = 'none'; // Hide the audio element
 
-        // Append the Audio element to the document body
-        document.body.appendChild(audio);
+        document.body.appendChild(audio); // Append the Audio element to the document body
 
-        // Clean up
-        audio.onended = () => {
+        audio.onended = () => { /// Clean up
             document.body.removeChild(audio); // Remove the audio element once playback ends
             window.URL.revokeObjectURL(url); // Revoke the blob URL
         };
