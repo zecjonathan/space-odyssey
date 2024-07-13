@@ -1,10 +1,22 @@
-:root { /*https://coolors.co/89b6a5-4c3b4d-c9eddc-82968c-6a706e*/
+[color-mode="light"] {
+    /* Light mode variables */
     --primary: #4C3B4D;
     --secondary: #C9EDDC;
     --accent: #ff6161;
-    --white: #FFFFFF;
-    --black: #000000;
+    --bg: #f0f0f0;
+    --text-color: #1a1a1a; /* Changed variable name from --text to --text-color */
 }
+
+[color-mode="dark"] {
+    /* Light mode variables */
+    --primary: #4C3B4D;
+    --secondary: #C9EDDC;
+    --accent: #ff6161;
+    --bg: #1a1a1a;
+    --text-color: #f0f0f0;
+}
+
+    /* transition: background-color 0.5s ease, color 0.5s ease; /* Transition for both background and text color */
 
 body {
     font-family: Arial, sans-serif;
@@ -13,7 +25,8 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: var(--white);
+    color: var(--text-color);
+    background-color: var(--bg);
     font-size: 16px;
 }
 
@@ -59,14 +72,12 @@ footer {
     height: 100px;
     border-radius: 10px;
     transition: all 0.1s ease-in;
-    color: var(--white);
+    color: white;
     padding: 0.7em 1.7em;
     cursor: pointer;
     font-size: 20px;
-    background: var(--white); 
-    border: 1px solid var(--black);
+    border: 1px solid var(--primary);
     text-decoration: none;
-
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -92,14 +103,14 @@ footer {
     border-radius: 5px;
     border-top-right-radius: 15px;
     font-size: 25px;
-    background: var(--white); 
-    border: 1px solid var(--black);
-    color: var(--black);
+    background: var(--bg); 
+    border: 1px solid var(--primary);
+    color: var(--text);
 }
 
 .hidden-link {
     text-decoration: none;
-    color: var(--black);
+    color: var(--text);
 }
 
 /*alle button id's mit hintergrund*/
