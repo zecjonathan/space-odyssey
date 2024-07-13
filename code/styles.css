@@ -62,7 +62,7 @@ footer {
 }
 
 .shadow {
-    -webkit-box-shadow: 10px 10px 21px -13px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 10px 10px 21px -13px rgba(0,0,0,0.3); /* mby zu hexa ändern, wenn alpha auch da possible ist */
     -moz-box-shadow: 10px 10px 21px -13px rgba(0,0,0,0.3);
     box-shadow: 10px 10px 21px -13px rgba(0,0,0,0.3);
 }
