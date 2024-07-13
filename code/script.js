@@ -1,20 +1,17 @@
-document.addEventListener("DOMContentLoaded", function() { // starts when page loads
+document.addEventListener("DOMContentLoaded", function() { // ALL CODE IN HERE RUNNS AS SOON AS THE PAGE LOADS
     fetch('addons/header.html') // fetching the header.html into any index.html file with header-container id
         .then(response => response.text())
         .then(data => {
             document.getElementById('header-container').innerHTML = data;
         })
-});
 
-document.addEventListener("DOMContentLoaded", function() { // starts when page loads
     fetch('addons/footer.html') // fetching the header.html into any index.html file with header-container id
         .then(response => response.text())
         .then(data => {
             document.getElementById('footer-container').innerHTML = data;
         })
-});
 
-document.addEventListener("DOMContentLoaded", function() { // calls function on page load
+    // cookie x color moder fetcher start
     let cookieColor = getCookie("color-mode"); // sets cookieColor var to getCookie function return for the cookie "color-mode"
     const html = document.querySelector('html'); // selects the <html> element and assigns it to the constant variable html
     if (cookieColor === "dark") { // if cookieColor (so from cookie browser data) is "dark", sets the 'color-mode' attribute of the <html> element to 'dark
@@ -23,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function() { // calls function on 
     if (cookieColor === "light") { // if cookieColor is "light", sets the 'color-mode' attribute of the <html> element to 'light'
         html.setAttribute('color-mode', 'light');
     } 
+    // cookie x color moder fetcher end
 });
 
 function getCookie(cname) { // sets function to get cookie 

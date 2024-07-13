@@ -5,7 +5,6 @@
     --accent: #ff6161;
     --bg: #f0f0f0;
     --text: #1a1a1a; /* Changed variable name from --text to --text-color */
-    transition: background-color 0.8s, color 0.8s;
 }
 
 [color-mode="dark"] {
@@ -40,7 +39,8 @@ footer {
 }
 
 .colorModeButton {
-    position: absolute;
+    position: fixed; /* stays on page not moving (always visible) */
+    z-index: 1000; /* always on top of everyting */
     border: 1px solid var(--text);
     background-color: var(--bg);
     color: var(--text);
@@ -130,8 +130,13 @@ footer {
     color: var(--text);
 }
 
-.hidden-link {
+.link {
     text-decoration: none;
+    color: var(--text);
+}
+
+.link:hover {
+    text-decoration: underline;
     color: var(--text);
 }
 
