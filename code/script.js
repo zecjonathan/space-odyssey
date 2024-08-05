@@ -39,7 +39,7 @@ function getCookie(cname) { // sets function to get cookie
     return ""; // if no cookie found empty data
 }
 
-function toggleColorMode() { // states function (get called with button in header and toogles from light to dark)
+function toggleColorMode() { // function (gets called with button in header and toogles from light to dark)
     const html = document.querySelector('html'); // selects the <html> element and assigns it to the constant variable html
     if (html.getAttribute('color-mode') === 'light') { // if current color mode is light
         html.setAttribute('color-mode', 'dark'); // set attribute dark
