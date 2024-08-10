@@ -70,7 +70,7 @@ footer {
 }
 
 .image {
-    width: 100%;
+    width: min(1200px, calc(100vw - 20px));
     object-fit: cover;
     max-height: 600px;
     border-radius: 20px;
@@ -102,7 +102,7 @@ footer {
     background-repeat: no-repeat;
 }
 
-.button:hover {
+.button-table a:hover {
     font-size: 24px;
     font-weight: 600;
     transition-duration: 0.1s;
@@ -147,57 +147,57 @@ footer {
 
 /*alle button id's mit hintergrund*/
 #palast {
-    background-image: url('assets/palast.png'); /* Replace 'your-image.jpg' with your image file */
+    background-image: url('assets/palast.png'); /* Replace 'your-image.png' with your image file */
 }
 
 #schenke {
-    background-image: url('assets/schenke.jpeg'); /* Replace 'your-image.jpg' with your image file */
+    background-image: url('assets/schenke.png'); /* Replace 'your-image.png' with your image file */
 }
 
 #lumaria {
-    background-image: url('assets/lumaria.png'); /* Replace 'your-image.jpg' with your image file */
+    background-image: url('assets/lumaria.png'); /* Replace 'your-image.png' with your image file */
 }
 
 #aeltester {
-    background-image: url('assets/aeltester.jpg'); /* Replace 'your-image.jpg' with your image file */
+    background-image: url('assets/aeltester.png'); /* Replace 'your-image.png' with your image file */
 }
 
 #wirt {
-    background-image: url('assets/wirt.png'); /* Replace 'your-image.jpg' with your image file */
+    background-image: url('assets/wirt.png'); /* Replace 'your-image.png' with your image file */
 }
 
 #wache {
-    background-image: url('assets/wache.jpg'); /* Replace 'your-image.jpg' with your image file */
+    background-image: url('assets/wache.png'); /* Replace 'your-image.png' with your image file */
 }
 
 #ruine {
-    background-image: url('assets/ruine.jpg'); /* Replace 'your-image.jpg' with your image file */
+    background-image: url('assets/ruine.png'); /* Replace 'your-image.png' with your image file */
 }
 
 #bier {
-    background-image: url('assets/bier.jpg'); /* Replace 'your-image.jpg' with your image file */
+    background-image: url('assets/bier.png'); /* Replace 'your-image.png' with your image file */
 }
 
 #artefakt {
-    background-image: url('assets/artefakt.jpg'); /* Replace 'your-image.jpg' with your image file */
+    background-image: url('assets/artefakt.png'); /* Replace 'your-image.png' with your image file */
 }
 
 #wache {
-    background-image: url('assets/wache.jpg'); /* Replace 'your-image.jpg' with your image file */
+    background-image: url('assets/wache.png'); /* Replace 'your-image.png' with your image file */
 }
 
 #fremder-frage {
-    background-image: url('assets/fremder-frage.png'); /* Replace 'your-image.jpg' with your image file */
+    background-image: url('assets/fremder-frage.png'); /* Replace 'your-image.png' with your image file */
 }
 
 #kampf {
-    background-image: url('assets/kampf.png'); /* Replace 'your-image.jpg' with your image file */
+    background-image: url('assets/kampf.png'); /* Replace 'your-image.png' with your image file */
 }
 
 #seite {
-    background-image: url('assets/seite.png'); /* Replace 'your-image.jpg' with your image file */
+    background-image: url('assets/seite.png'); /* Replace 'your-image.png' with your image file */
 }
 
 #fremder-frage2 {
-    background-image: url('assets/fremder-frage2.png'); /* Replace 'your-image.jpg' with your image file */
+    background-image: url('assets/fremder-frage2.png'); /* Replace 'your-image.png' with your image file */
 }
