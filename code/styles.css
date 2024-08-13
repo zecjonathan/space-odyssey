@@ -125,6 +125,7 @@ footer {
     background: var(--bg); 
     border: 1px solid var(--bg);
     color: var(--text);
+    transition: background-color 0.8s, color 0.8s, border 0.8s;
 }
 
 .image-container p {
