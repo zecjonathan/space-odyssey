@@ -1,14 +1,14 @@
 [color-mode="light"] {
-    /* Light mode variables */
+    /* Light mode Farben */
     --primary: #4C3B4D;
     --secondary: #C9EDDC;
     --accent: #ff6161;
     --bg: #f0f0f0;
-    --text: #1a1a1a; /* Changed variable name from --text to --text-color */
+    --text: #1a1a1a; /* Variable von --text auf --text-color geändert */
 }
 
 [color-mode="dark"] {
-    /* Light mode variables */
+    /* Dark mode Farben */
     --primary: #4C3B4D;
     --secondary: #C9EDDC;
     --accent: #ff6161;
@@ -16,17 +16,20 @@
     --text: #f0f0f0;
 }
 
+header, footer, body, main {
+    transition: background-color 0.4s;
+}
+
 body {
     font-family: Helvetica, Arial, sans-serif;
     display: flex;
-    flex-direction: column; /* Ensure content is stacked vertically */
+    flex-direction: column; /* Inhalte werden vertikal gestapelt */
     align-items: center;
     height: 100vh;
     margin: 0 auto;
     color: var(--text);
     background-color: var(--bg);
     font-size: 16px;
-    transition: background-color 0.8s, color 0.8s;
     text-align: center;
     width: min(1200px, calc(100vw - 20px));
 }
@@ -41,8 +44,8 @@ footer {
 }
 
 .colorModeButton {
-    position: fixed; /* stays on page not moving (always visible) */
-    z-index: 1000; /* always on top of everyting */
+    position: fixed; /* Bleibt an einer festen Position auf der Seite */
+    z-index: 1000; /* Immer oben auf allem sichtbar */
     border: 1px solid var(--text);
     background-color: var(--bg);
     color: var(--text);
@@ -52,19 +55,18 @@ footer {
     border-radius: 10px;
     padding: 10px;
     fill: var(--text);
-    transition: background-color 0.8s, color 0.8s;
 }
 
-.colorModeButton svg line { /* some random css code for the dark mode icon svg*/
+.colorModeButton svg line { /* CSS für das Icon im Dark Mode */
     stroke: var(--text);
-    stroke-width:5;
-    stroke-linecap:round;
-    stroke-linejoin:round;
-    stroke-miterlimit:10;
+    stroke-width: 5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
 }
 
 .shadow {
-    -webkit-box-shadow: 10px 10px 21px -13px #0000004d; /* mby zu hex ändern, wenn alpha auch da possible ist */
+    -webkit-box-shadow: 10px 10px 21px -13px #0000004d; /* Vielleicht Hex-Code ändern, wenn Alpha auch geht */
     -moz-box-shadow: 10px 10px 21px -13px #0000004d;
     box-shadow: 10px 10px 21px -13px #0000004d;
 }
@@ -136,69 +138,82 @@ footer {
     color: #FFFFFF;
 }
 
-.link {
+a {
     text-decoration: none;
     color: var(--text);
 }
 
-.link:hover {
+a:hover {
     text-decoration: underline;
     color: var(--text);
 }
 
-/*alle button id's mit hintergrund*/
+table {
+    border-collapse: collapse; /* Stellt sicher, dass die Ränder nicht doppelt sind */
+    width: 100%; /* Optional: Lässt die Tabelle die gesamte Breite ihres Containers einnehmen */
+}
+
+table td {
+    vertical-align: top; /* Richtet den Text am oberen Rand der Zelle aus */
+    text-align: left;    /* Richtet den Text an der linken Seite der Zelle aus */
+    padding: 5px;
+    border: 1px solid var(--text); /* Fügt einen 1px dicken, schwarzen Rahmen um die Tabelle, den Header und die Zellen hinzu */
+    padding: 5px; /* Optional: Fügt etwas Innenabstand in den Zellen hinzu, um die Lesbarkeit zu verbessern */
+}
+
+/* Alle Button-IDs mit Hintergrund */
 #palast {
-    background-image: url('assets/palast.png'); /* Replace 'your-image.png' with your image file */
+    background-image: url('assets/palast.png'); 
 }
 
 #schenke {
-    background-image: url('assets/schenke.png'); /* Replace 'your-image.png' with your image file */
+    background-image: url('assets/schenke.png'); 
 }
 
 #lumaria {
-    background-image: url('assets/lumaria.png'); /* Replace 'your-image.png' with your image file */
+    background-image: url('assets/lumaria.png'); 
 }
 
 #aeltester {
-    background-image: url('assets/aeltester.png'); /* Replace 'your-image.png' with your image file */
+    background-image: url('assets/aeltester.png'); 
 }
 
 #wirt {
-    background-image: url('assets/wirt.png'); /* Replace 'your-image.png' with your image file */
+    background-image: url('assets/wirt.png'); 
 }
 
 #wache {
-    background-image: url('assets/wache.png'); /* Replace 'your-image.png' with your image file */
+    background-image: url('assets/wache.png'); 
 }
 
 #ruine {
-    background-image: url('assets/ruine.png'); /* Replace 'your-image.png' with your image file */
+    background-image: url('assets/ruine.png'); 
 }
 
 #bier {
-    background-image: url('assets/bier.png'); /* Replace 'your-image.png' with your image file */
+    background-image: url('assets/bier.png'); 
 }
 
 #artefakt {
-    background-image: url('assets/artefakt.png'); /* Replace 'your-image.png' with your image file */
+    background-image: url('assets/artefakt.png'); 
 }
 
 #wache {
-    background-image: url('assets/wache.png'); /* Replace 'your-image.png' with your image file */
+    background-image: url('assets/wache.png'); 
 }
 
 #fremder-frage {
-    background-image: url('assets/fremder-frage.png'); /* Replace 'your-image.png' with your image file */
+    background-image: url('assets/fremder-frage.png'); 
 }
 
 #kampf {
-    background-image: url('assets/kampf.png'); /* Replace 'your-image.png' with your image file */
+    background-image: url('assets/kampf.png'); 
 }
 
 #seite {
-    background-image: url('assets/seite.png'); /* Replace 'your-image.png' with your image file */
+    background-image: url('assets/seite.png'); 
 }
 
 #fremder-frage2 {
-    background-image: url('assets/fremder-frage2.png'); /* Replace 'your-image.png' with your image file */
+    background-image: url('assets/fremder-frage2.png'); 
 }
