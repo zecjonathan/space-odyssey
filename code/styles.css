@@ -3,9 +3,10 @@
     --primary: #4C3B4D;
     --secondary: #C9EDDC;
     --accent: #ff6161;
-    --bg: #f0f0f0;
+    --bg: #ffffff;
     --text: #1a1a1a; /* Variable von --text auf --text-color geändert */
 }
+
 
 [color-mode="dark"] {
     /* Dark mode Farben */
@@ -13,7 +14,7 @@
     --secondary: #C9EDDC;
     --accent: #ff6161;
     --bg: #1a1a1a;
-    --text: #f0f0f0;
+    --text: #ffffff;
 }
 
 header, footer, body, main {
@@ -31,7 +32,7 @@ body {
     background-color: var(--bg);
     font-size: 16px;
     text-align: center;
-    width: min(1200px, calc(100vw - 20px));
+    width: min(1200px, calc(100vw - 40px));
 }
 
 header {
@@ -89,6 +90,12 @@ footer {
     gap: 10px;
 }
 
+@media (max-width: 700px) { /*custom für handydisplays*/
+    .button-table {
+        grid-template-columns: 1fr;
+    }
+}
+
 .button-table a {
     height: 100px;
     border-radius: 10px;
@@ -105,6 +112,8 @@ footer {
 }
 
 .button-table a:hover {
+    text-decoration: none;
+    color: white;
     font-size: 24px;
     font-weight: 600;
     transition-duration: 0.1s;
@@ -150,15 +159,13 @@ a:hover {
 
 table {
     border-collapse: collapse; /* Stellt sicher, dass die Ränder nicht doppelt sind */
-    width: 100%; /* Optional: Lässt die Tabelle die gesamte Breite ihres Containers einnehmen */
 }
 
 table td {
     vertical-align: top; /* Richtet den Text am oberen Rand der Zelle aus */
     text-align: left;    /* Richtet den Text an der linken Seite der Zelle aus */
-    padding: 5px;
     border: 1px solid var(--text); /* Fügt einen 1px dicken, schwarzen Rahmen um die Tabelle, den Header und die Zellen hinzu */
-    padding: 5px; /* Optional: Fügt etwas Innenabstand in den Zellen hinzu, um die Lesbarkeit zu verbessern */
+    padding: 15px; /* Optional: Fügt etwas Innenabstand in den Zellen hinzu, um die Lesbarkeit zu verbessern */
 }
 
 /* Alle Button-IDs mit Hintergrund */
