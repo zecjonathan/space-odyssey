@@ -93,6 +93,7 @@ footer {
 @media (max-width: 700px) { /*custom für handydisplays*/
     .button-table {
         grid-template-columns: 1fr;
+        gap: 10px;
     }
 }
 
@@ -104,7 +105,6 @@ footer {
     padding: 0.7em 1.7em;
     cursor: pointer;
     font-size: 20px;
-    border: none;
     text-decoration: none;
     background-size: cover;
     background-position: center;
@@ -117,8 +117,9 @@ footer {
     font-size: 24px;
     font-weight: 600;
     transition-duration: 0.1s;
-    transform: scale(1.2) rotate(2deg);
+    transform: scale(1.05) rotate(1deg);
 }
+/* 03.09.24_htmlProjekt_NoNatuschSchneider */
   
 .image-container {
     position: relative;
